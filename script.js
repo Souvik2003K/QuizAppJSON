@@ -262,11 +262,11 @@ function showResult(){
   quiz.classList.remove('quiz-wrapper-show');
   result.classList.add('result-wrapper-show');
   let sc = "";  
-  if(userScore < 2) {
+  if(userScore <= 2) {
     sc = `<p> You have scored `+ userScore + ` out of ` + NoOfQues + `. Try solving more questions and practice hard</p>`;
     icon.innerHTML = `<i class="fa-regular fa-face-frown"></i>`;
   }
-  else if(userScore > 2 && userScore < 4) {
+  else if(userScore > 2 && userScore <= 4) {
     sc = `<p> Well done, You have scored `+ userScore + ` out of ` + NoOfQues + `. Brushup your knowledge a little bit</p>`;
     icon.innerHTML = `<i class="fa-solid fa-thumbs-up"></i>`;
   }
