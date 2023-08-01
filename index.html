@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <script src="https://kit.fontawesome.com/0d8b0a3479.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="start">
+        <button class="btn">Start Quiz</button>
+    </div>
+
+    <!-- (rules)-->
+    <div class="rules-wrapper">
+        <div class="head">Some Rules of this Quiz</div>
+        <div class="rules-div">
+            <div class="rule">1. You will have only <span>10 seconds</span> per each question.</div>
+            <div class="rule">2. Once you select your answer, it can't be undone.</div>
+            <div class="rule">3. You can't select any option once time goes off.</div>
+            <div class="rule">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="rule">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit btn">Exit Quiz</button>
+            <button class="continue btn">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz-wrapper">
+        <header>
+            <div class="head">
+                <div class="title">Quiz:&nbsp;</div>
+                <div class="q-count"></div>
+            </div>
+            <div class="timer">
+                <div class="time-left">Time Left:&nbsp;</div>
+                <div class="time">10</div>      <!-- decrease value using innerhtml -->
+                <div>&nbsp;sec</div>
+            </div>
+        </header>
+        <section>
+            <div class="ques">
+                <!-- Questions -->
+            </div>
+            <div class="options">
+                <!-- All options -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <button class="next btn">Next<button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-wrapper">
+        <div class="icon">
+            <!-- icon will be placed -->
+            <p><i class="fas fa-crown"></i></p>
+        </div>
+        <div class="complete">You've completed the Quiz!</div>
+        <div class="score">
+            <!-- Score Result -->
+        </div>
+        <div class="buttons">
+            <button class="restart btn">Replay Quiz</button>
+            <button class="exit btn">Exit Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
